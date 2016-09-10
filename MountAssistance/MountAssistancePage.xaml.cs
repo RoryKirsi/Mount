@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace MountAssistance
 {
@@ -8,6 +9,16 @@ namespace MountAssistance
 		{
 			InitializeComponent();
 		}
-	}
-}
 
+		async void NavigateToList(object sender, EventArgs args)
+		{
+			await Navigation.PushModalAsync(new MountPage());
+		}
+
+		async void NavigateToFeedback(object sender, EventArgs args)
+		{
+			await Navigation.PushModalAsync(new Feedback());
+		}
+	}
+
+}
