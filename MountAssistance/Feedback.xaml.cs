@@ -11,11 +11,5 @@ namespace MountAssistance
 		{
 			InitializeComponent();
 		}
-
-		async void NavigateToHome(object sender, EventArgs args)
-		{
-			await Navigation.PushModalAsync(new MountAssistancePage());
-		}
 	}
 }
-
